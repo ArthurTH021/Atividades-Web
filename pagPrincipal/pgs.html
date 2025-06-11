@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Final</title>
+    <link rel="icon" type="image/png" href="img/sistema.png">
+
+    <link rel="stylesheet" href="pgs.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="info">
+                <h1>Portipar<span>#</span> Atividade Final</h1>
+                <div id="loginForm"></div> 
+            </div>
+        <a href="index.html">
+            <img src="img/uniparLogo.BRANCA.png" alt="Logo da UNIPAR" class="logo">
+        </a>
+    </div>
+    </header>
+    <div class="containerAtv">
+        <div class="sidebar">
+            <h2>Atividades</h2>
+            <button onclick="carregarAtv('../atv1/atv1.html')">Calculadora de IMC</button>
+            <button onclick="carregarAtv('../atv2/atv2.html')">Calculadora de Média</button>
+            <button onclick="carregarAtv('../atv3/atv3.html')">Tabuada Interativa</button>
+            <button onclick="carregarAtv('../atv4/atv4.html')">Conversor de Temperatura</button>
+            <button onclick="carregarAtv('../atv5/atv5.html')">Verificador de CPF</button>
+            <button onclick="carregarAtv('../atv6/atv6.html')">Lista de Tarefas</button>
+            <button onclick="carregarAtv('../atv7/atv7.html')">Jogo da Adivinhação</button>
+            <button onclick="carregarAtv('../atv8/atv8.html')">Verificador de Números Primos</button>
+            <button onclick="carregarAtv('../atv9/atv9.html')">Lista de Compras</button>
+            <button onclick="carregarAtv('../atv10/atv10.html')">Sorteador de Nomes</button>
+            <button onclick="carregarAtv('../atv11/atv11.html')">Simulador de Caixa Eletrônico</button>
+            <button onclick="carregarAtv('../atv12/atv12.html')">Quiz de Perguntas</button>
+            <button onclick="carregarAtv('../atv13/atv13.html')">Jogo da Velha</button>
+            <button onclick="carregarAtv('../atv14/atv14.html')">Cronômetro</button>
+            <button onclick="carregarAtv('../atv15/atv15.html')">Controle de Visibilidade</button>
+            <button onclick="carregarAtv('../atv16/atv16.html')">Validador de Senha Forte</button>
+            <button onclick="carregarAtv('../atv17/atv17.html')">Galeria de Imagens</button>
+            <button onclick="carregarAtv('../atv18/atv18.html')">Contador Regressivo</button>
+            <button onclick="carregarAtv('../atv19/atv19.html')">Editor de Texto Simples</button>
+            <button onclick="carregarAtv('../atv20/atv20.html')">Jogo de Memória</button>
+        </div>
+        <div class="conteudo">
+            <iframe id="iframeAtv">
+            </iframe>
+        </div>
+    </div>
+
+    <script>
+        function carregarAtv(atv) {
+            document.getElementById('iframeAtv').src = atv;
+        }
+        carregarAtv(atv);
+    </script>
+
+    <script>
+        const nomeUsuario = localStorage.getItem('usuarioNome') || 'Usuário';
+
+        document.getElementById('loginForm').innerHTML = `
+            <p>Bem-vindo(a), ${nomeUsuario}!</p>
+        `;
+    </script>
+
+</body>
+
+</html>

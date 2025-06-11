@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 11 - Simulador de Caixa Eletrônico</title>
+  <link rel="stylesheet" href="atv11.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Atividade 11</h1>
+
+
+
+    <section>
+      <label for="valor">Digite o valor do saque:</label>
+      <input type="number" id="valor" placeholder="Ex: 186">
+
+      <button onclick="simularSaque()">Calcular Notas</button>
+
+      <div id="resultado"></div>
+    </section>
+
+    <section>
+      <h2>Explicação</h2>
+      <p>
+        Utilizamos JavaScript para receber o valor digitado, e com o auxílio de laços de repetição e operadores
+        matemáticos,
+        o sistema verifica quantas notas de cada valor são necessárias para compor o total solicitado, começando pelas
+        notas de maior valor.
+      </p>
+      <p>
+        A cada iteração, usamos <code>Math.floor()</code> e o operador módulo (<code>%</code>) para calcular a
+        quantidade de cada cédula.
+        Só são utilizadas as notas disponíveis (100, 50, 20, 10, 5, 2).
+      </p>
+    </section>
+  </div>
+
+  <script src="atv11.js"></script>
+</body>
+
+</html>

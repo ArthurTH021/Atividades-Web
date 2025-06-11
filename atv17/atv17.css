@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #ff0000;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.botoes {
+    display: flex;
+    gap: 10px;
+}
+
+button, .botaoAcesso {
+    padding: 8px 16px;
+    margin-top: 45px;
+    background-color: white;
+    color: #ff0000;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover, .botaoAcesso:hover{
+    background-color: #ff0000;
+    color: white;
+    border-color: white;
+}
+
+.voltar {
+    background-color: #ff0000;
+    color: white;
+}
+
+#telaInicial {
+    text-align: center;
+    padding: 110px 20px;
+}
+
+#telaInicial p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 16px;
+    color: #444;
+    text-align: justify;
+}
+
+.data {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #666;
+    text-align: right;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+
+.galeria img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+.esconder {
+    display: none;
+}

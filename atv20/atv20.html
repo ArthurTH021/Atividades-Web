@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atividade 03 - Jogo da Memória</title>
+</head>
+
+<body>
+
+<link rel="stylesheet" href="atv20.css">
+
+  <div class="container">
+    <h1>Atividade 20 - Jogo de Memória</h1>
+    <div class="data">Data de resolução: 27/05/2025</div>
+
+    <div class="section">
+      <h2>Enunciado</h2>
+      <p>
+        Implemente um jogo da memória simples com cartas viradas para baixo. Ao clicar em duas cartas, elas devem virar para cima. Se forem iguais, permanecem visíveis; se não, viram para baixo novamente. O jogo termina quando todas as cartas forem encontradas.
+      </p>
+    </div>
+
+    <div class="section">
+  <h2>Resolução</h2>
+  <div class="board-container">
+    <div class="board" id="board"></div>
+  </div>
+  <button id="restartBtn">Recomeçar</button>
+  <div class="message" id="message"></div>
+</div>
+
+    <div class="section">
+      <h2>Explicação</h2>
+      <p> Defini um array com pares de emojis e embaralho esse array sempre que o tabuleiro é criado. Para cada carta, crio um elemento <strong>div</strong> e adiciono um evento de clique que controla a lógica do jogo: ao clicar, a carta é revelada, se duas cartas forem abertas, ele verifica se são iguais. Se forem, marca como "matched", se não, vira ambas para baixo após um pequeno atraso. Coloquei um botão de "Recomeçar", que reinicializa o tabuleiro e embaralha as cartas novamente. O código garante que o usuário só pode interagir com duas cartas por vez e exibe uma mensagem quando todas as cartas forem encontradas.
+      </p>
+    </div>
+  </div>
+
+<script src ="atv20.js"></script>
+
+</body>
+</html>

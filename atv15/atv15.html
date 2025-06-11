@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle de Visibilidade (Toggle)</title>
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="atv15.css">
+
+  <div class="container">
+    <h1>Controle de Visibilidade (Toggle)</h1>
+
+
+    <div class="section">
+      <h2>Enunciado</h2>
+      <p>Faça uma página onde o usuário possa esconder e mostrar diferentes seções de conteúdo clicando em botões.
+        Utilize transições suaves para melhorar a experiência visual.</p>
+    </div>
+
+    <div class="section">
+      <h2>Resolução e Explicação</h2>
+
+      <button onclick="toggleSection('secao1')">Mostrar/Esconder Seção 1</button>
+      <div id="secao1" class="toggle-section">
+        <p>No HTML, criei três seções de conteúdo, cada uma com um botão associado que chama a função
+          <strong>toggleSection</strong> passando o id da respectiva seção.</p>
+      </div>
+
+      <button onclick="toggleSection('secao2')">Mostrar/Esconder Seção 2</button>
+      <div id="secao2" class="toggle-section">
+        <p>No JavaScript, implementei a função <strong>toggleSection</strong>, que alterna a classe hidden na seção
+          correspondente. Essa classe, definida no CSS, altera a opacidade, altura e margens da seção, criando uma
+          transição suave ao mostrar ou esconder o conteúdo.</p>
+      </div>
+
+      <button onclick="toggleSection('secao3')">Mostrar/Esconder Seção 3</button>
+      <div id="secao3" class="toggle-section">
+        <p>O CSS também estiliza os botões, as seções e aplica as transições visuais, alem de suavizar as transições de
+          seção.</p>
+      </div>
+
+    </div>
+
+    <script src="atv15.js"></script>
+
+</body>
+
+</html>

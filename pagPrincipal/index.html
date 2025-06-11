@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Portipar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+<body>
+<main class="container"> 
+    <form id="loginForm" action="pgs.html" method="get">
+        <h1>Portipar<img id="hash" src="img/hashtag.png"></h1>
+
+        <div class="input-box">
+            <input placeholder="Seu Nome" type="text" id="usuario" name="usuario">
+            <i class="bx bxs-user"></i>
+        </div>
+
+        <div class="input-box">
+            <input placeholder="R.A" type="text" id="RA" name="RA">
+            <i class="bx bxs-id-card"></i>
+        </div>
+
+        <button class="btp" type="submit">Entrar</button>
+    </form>
+</main>
+
+<script src="script.js"></script>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evita o envio padrão do formulário
+
+        //armazena o nome do usuário no localStorage
+        const nomeUsuario = document.getElementById('usuario').value;
+        localStorage.setItem('usuarioNome', nomeUsuario);
+
+        //redireciona pra pagina de atividades
+        window.location.href = 'pgs.html';   
+        });
+</script>
+</body>
+</html>

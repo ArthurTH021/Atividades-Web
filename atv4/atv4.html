@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 4 - Conversor de Temperatura</title>
+  <link rel="stylesheet" href="atv4.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Atividade 4</h1>
+
+    <section>
+
+      <label for="temperatura">Temperatura:</label>
+      <input type="number" id="temperatura" placeholder="Digite a temperatura">
+
+      <label for="tipo">Tipo de conversão:</label>
+      <select id="tipo">
+        <option value="cToF">Celsius → Fahrenheit</option>
+        <option value="fToC">Fahrenheit → Celsius</option>
+      </select>
+
+      <button onclick="converter()">Converter</button>
+
+      <div id="resultado"></div>
+    </section>
+
+    <section>
+      <p>A lógica de conversão é baseada nas seguintes fórmulas:<li><b>Celsius para Fahrenheit</b>: F = C × 1.8 + 32</li>
+        <li><b>Fahrenheit para Celsius</b>: C = (F - 32) ÷ 1.8</li></p>
+
+
+      <p>O JavaScript é utilizado para capturar os valores inseridos, realizar o cálculo com base na escolha do usuário
+        e mostrar o resultado na tela.</p>
+    </section>
+  </div>
+
+  <script src="atv4.js"></script>
+</body>
+
+</html>

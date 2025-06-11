@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    color: #000000;
+}
+
+#X h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: red;
+}
+
+#tabuleiro {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.Ordem {
+    display: flex;
+}
+
+.Card {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color: white;
+    border: 2px solid red;
+    border-radius: 8px;
+    font-size: 36px;
+    color: #b30000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Card:hover {
+    background-color: #ffc0c0;
+}
+
+#reiniciar {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reiniciar:hover {
+    background-color: #cc0000;
+}
+
+main p {
+    margin-top: 20px;
+    padding: 10px;
+}

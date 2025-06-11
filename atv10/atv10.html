@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="atv10.css" rel="stylesheet" />
+
+  <title>SORTEADOR</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteador de Nomes</h1>
+
+    <textarea id="nomes" placeholder="Digite os nomes separados por vírgula (Ex: Ana, João, Pedro)"></textarea>
+
+    <button id="sortear" onclick="sortearNome()">Sortear</button>
+    <button id="resetar" onclick="resetar()">Resetar</button>
+
+    <div id="resultado"></div>
+
+    <div class="explicacao">
+      <h2>Como foi resolvido:</h2>
+      <p>
+        Foi criado um campo <code>textarea</code> onde o usuário insere vários nomes separados por vírgula. A função em JavaScript lê esses nomes, transforma em um array usando <code>split(',')</code> e remove espaços usando <code>trim()</code>. O sorteio é feito com <code>Math.random()</code> para escolher um índice aleatório do array. O nome sorteado é exibido na tela. Também há um botão "Resetar" que limpa os campos e o resultado.
+      </p>
+    </div>
+
+    <div class="data">
+      Resolvido em: 26/05/2025
+    </div>
+  </div>
+
+  <script src="atv10.js"></script>
+</body>
+</html>

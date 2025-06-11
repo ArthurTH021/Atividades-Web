@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 16 - Validador de Senha Forte</title>
+  <link rel="stylesheet" href="atv16.css">
+</head>
+
+<body>
+  <h1>Atividade 16</h1>
+
+  <section class="interativo">
+    <label for="senha">Digite sua senha:</label>
+    <input type="password" id="senha">
+    <button onclick="validarSenha()">Validar</button>
+
+    <div style="margin-top:10px;">
+      <input type="checkbox" id="mostrar" onclick="mostrarSenha()">
+      <label for="mostrar">Mostrar senha</label>
+    </div>
+
+    <div id="resultado"></div>
+  </section>
+  <p>O site foi criado como um validador de senha forte utilizando HTML, CSS e JavaScript. O HTML fornece a estrutura
+    com um campo de senha, botão de validação e opção para mostrar ou ocultar o conteúdo digitado. O CSS estiliza o
+    formulário com destaque em vermelho, bordas arredondadas e foco na legibilidade. O JavaScript implementa a lógica de
+    verificação, avaliando se a senha contém pelo menos 8 caracteres, uma letra maiúscula, uma minúscula, um número e um
+    caractere especial. O resultado é exibido com ícones de confirmação ou erro, tornando a validação clara, rápida e
+    eficaz.</p>
+
+  <script src="atv16.js"></script>
+</body>
+
+</html>

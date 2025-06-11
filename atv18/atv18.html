@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 18 - Contador Regressivo</title>
+  <link rel="stylesheet" href="atv18.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Atividade 18 - Contador Regressivo (Timer)</h1>
+
+    <section>
+      <h2>Enunciado</h2>
+      <p>
+        Desenvolva um contador regressivo onde o usuário informe o tempo em minutos e segundos.
+        Ao iniciar, o sistema deve mostrar a contagem regressiva até zero, emitindo uma mensagem ao final.
+      </p>
+    </section>
+
+    <section>
+      <h2>Timer</h2>
+
+      <label for="min">Minutos:</label>
+      <input type="number" id="min" placeholder="0" min="0">
+
+      <label for="sec">Segundos:</label>
+      <input type="number" id="sec" placeholder="0" min="0" max="59">
+
+      <button onclick="iniciarContador()">Iniciar</button>
+
+      <div id="display" style="margin-top: 1em; font-size: 1.5em;"></div>
+    </section>
+
+    <section>
+      <h2>Explicação</h2>
+      <p>
+        Utilizamos <code>setInterval()</code> para criar um contador atualizado a cada segundo. O valor total de segundos é calculado e decrementado. O resultado é exibido no DOM, e ao chegar a zero uma mensagem é mostrada.
+      </p>
+    </section>
+
+    <section>
+      <p><em>Data de resolução: 24/05/2025</em></p>
+    </section>
+  </div>
+
+  <script src="atv18.js"></script>
+</body>
+</html>

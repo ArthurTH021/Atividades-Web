@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Números Primos</title>
+
+</head>
+
+<body>
+
+  <link rel="stylesheet" href="atv8.css">
+
+  <div class="container">
+    <h1>Atividade 8</h1>
+
+    <div class="section">
+      <h2>Resolução</h2>
+      <label for="numero">Digite um número:</label>
+      <input oninput="verificarPrimo()" type="number" id="numero" />
+
+
+      <p id="resultado"></p><br>
+
+    </div>
+
+    <div class="section">
+      <h2>Explicação</h2>
+      <p> No HTML, usei um campo de entrada (input) para o usuário digitar o número e apliquei o evento
+        oninput="verificarPrimo()", assim a verificação acontece instantaneamente a cada alteração no
+        valor.
+        A função verificarPrimo, implementada no arquivo script.js, lê o valor digitado, valida se é um
+        número inteiro maior ou igual a 2 e, em seguida, verifica se o número é primo usando um laço até a raiz quadrada
+        do valor informado. O resultado é exibido dinamicamente no elemento  p id="resultado" sem
+        necessidade de botão.
+      </p>
+    </div>
+  </div>
+
+  <script src="atv8.js"></script>
+
+</body>
+
+</html>

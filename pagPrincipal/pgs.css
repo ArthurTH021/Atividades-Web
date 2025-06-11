@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    margin: 0;
+    font-family: "Raleway", bold;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #ff2b2b;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 6px;
+    object-fit: contain;
+}
+
+.info {
+    margin-left: 15px;
+    margin-top: 12px;
+    line-height: 15px;
+}
+
+header h1 {
+    font-size: 25px;
+}
+
+header span {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+
+.containerAtv {
+    display: flex;
+    height: calc(150vh - 70px);
+}
+
+.sidebar {
+    width: 220px;
+    padding: 16px;
+    margin: 12px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    border-radius: 10px;
+    height: calc(161vh - 70px);
+}
+
+.sidebar h2 {
+    color: #333;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+.sidebar button {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar button:hover {
+    background-color: rgb(255, 255, 255);
+    color: red;
+    border: 1px solid red;
+}
+
+.conteudo {
+    flex: 1;
+    margin: 12px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;;
+}
+
+.conteudo iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+#loginForm {
+    font-size: 15px;
+}

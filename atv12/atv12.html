@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividade 12 - Quiz de Perguntas</title>
+  <link rel="stylesheet" href="atv12.css">
+</head>
+<body>
+  <h1>Atividade 12</h1>
+
+  <section class="interativo">
+    <form id="quizForm">
+
+      <div class="pergunta">
+        <p>1. Qual a capital do Brasil?</p>
+        <label><input type="radio" name="q1" value="0"> Rio de Janeiro</label><br>
+        <label><input type="radio" name="q1" value="1"> Brasília</label><br>
+        <label><input type="radio" name="q1" value="0"> São Paulo</label>
+      </div>
+
+      <div class="pergunta">
+        <p>2. Qual é o resultado de 5 + 3?</p>
+        <label><input type="radio" name="q2" value="0"> 6</label><br>
+        <label><input type="radio" name="q2" value="1"> 8</label><br>
+        <label><input type="radio" name="q2" value="0"> 9</label>
+      </div>
+
+      <div class="pergunta">
+        <p>3. Qual linguagem usamos no navegador?</p>
+        <label><input type="radio" name="q3" value="1"> JavaScript</label><br>
+        <label><input type="radio" name="q3" value="0"> Python</label><br>
+        <label><input type="radio" name="q3" value="0"> Java</label>
+      </div>
+
+      <div class="pergunta">
+        <p>4. Qual o maior planeta do sistema solar?</p>
+        <label><input type="radio" name="q4" value="0"> Terra</label><br>
+        <label><input type="radio" name="q4" value="1"> Júpiter</label><br>
+        <label><input type="radio" name="q4" value="0"> Marte</label>
+      </div>
+
+      <div class="pergunta">
+        <p>5. Qual cor resulta da mistura de azul com amarelo?</p>
+        <label><input type="radio" name="q5" value="0"> Vermelho</label><br>
+        <label><input type="radio" name="q5" value="0"> Roxo</label><br>
+        <label><input type="radio" name="q5" value="1"> Verde</label>
+      </div>
+
+      <button type="button" onclick="calcularResultado()">Ver Resultado</button>
+    </form>
+
+    <div id="resultado"></div>
+     </section>
+
+ <p>O site foi feito como um quiz interativo utilizando HTML, CSS e JavaScript. O HTML estrutura o formulário com cinco perguntas de múltipla escolha, cada uma com três alternativas. O CSS personaliza o visual da página, aplicando cores contrastantes, bordas arredondadas e espaçamento adequado para facilitar a leitura. O JavaScript contém a lógica de verificação: ao clicar no botão “Ver Resultado”, o script contabiliza quantas respostas corretas o usuário marcou e exibe a pontuação final. Essa combinação torna o site funcional, visualmente atrativo e ideal para testar conhecimentos de forma simples.</p>
+  <script src="atv12.js"></script>
+</body>
+</html>

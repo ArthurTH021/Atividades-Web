@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Atividade 19 - Editor de Texto Simples</title>
+  <link rel="stylesheet" href="atv19.css" />
+</head>
+
+<body>
+  <h1>Atividade 19 - Editor de Texto Simples</h1>
+
+  <section class="interativo">
+    <div class="botoes">
+      <button onclick="formatarTexto('bold')" title="Negrito"><b>B</b></button>
+      <button onclick="formatarTexto('italic')" title="Itálico"><i>I</i></button>
+      <button onclick="formatarTexto('underline')" title="Sublinhado"><u>U</u></button>
+    </div>
+
+    <div id="editor" contenteditable="true" spellcheck="false" aria-label="Editor de texto simples"></div>
+  </section>
+  <p>O site foi desenvolvido como um editor de texto simples utilizando HTML, CSS e JavaScript. O HTML estrutura a
+    interface com botões para aplicar formatações (negrito, itálico e sublinhado) e uma área de texto editável. O CSS
+    estiliza o layout com um visual limpo e moderno, destacando os botões e delimitando a área de edição com bordas e
+    cores contrastantes. O JavaScript implementa a funcionalidade dos botões usando o comando execCommand, permitindo ao
+    usuário formatar o texto selecionado com facilidade. O resultado é uma ferramenta prática e intuitiva para editar
+    textos diretamente no navegador.</p>
+
+  <script src="atv19.js"></script>
+</body>
+
+</html>
