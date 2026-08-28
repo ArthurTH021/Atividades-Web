@@ -1,0 +1,7 @@
+.foto{
+    width: 300px;/*largura*/
+    height: 500px;/*altura*/
+    border: 6px solid black;
+    border-radius: 5px;
+    
+}
