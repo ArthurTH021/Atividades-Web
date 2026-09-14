@@ -1,0 +1,99 @@
+// Comentário de uma linha
+
+/* Comentário em bloco de
+   várias linhas
+*/
+
+/// Comentário de documentação
+
+void main() {
+//===================================================
+//EX BÁSICO VARIÁVEIS
+
+  var nome = "ana";
+  var idade = 19;
+  var altura = 1.68;
+  var matriculado = true;
+    
+  print('$nome tem $idade anos');
+ 
+//===================================================
+//EX NULLS
+
+    String nomeExemplo = 'Carla';
+    // nomeExemplo = null; // erro
+    
+    String? apelido; // pode ser null
+    print(apelido); // null
+    
+    String exibicao = apelido ?? 'Sem apelido';
+    print(exibicao);
+ 
+//===================================================
+//EX INTERPOLAÇÃO E MÉTODOS DE STRING
+
+    String nome = 'Carlos';
+    int idade = 20;
+    
+    print('Nome: $nome');
+    print('No próximo ano terá: ${idade + 1} anos');
+    print('Quantidade de letras: ${nome.length}');
+    
+//===================================================
+//EX IF
+
+    double notaLuquinhas = 7.5;
+    if(notaLuquinhas >= 7.0){
+        print('Aprovado!!');
+    }else if(notaLuquinhas >= 4.0){
+        print('Exame');
+    }else{
+        print('Reprovado ;(');
+    }
+    
+    double notaPedrinho = 9.0;
+    if(notaPedrinho >= 7.0){
+        print('Aprovado!!');
+    }else if(notaPedrinho >= 4.0){
+        print('Exame');
+    }else{
+        print('Reprovado ;(');
+    }
+    
+    double notaJoaozinho = 1;
+    if(notaJoaozinho >= 7.0){
+        print('Aprovado!!');
+    }else if(notaJoaozinho >= 4.0){
+        print('Exame');
+    }else{
+        print('Reprovado :(');
+    }
+    
+//===================================================
+//EX SWITCH-CASE
+
+String perfil = 'desconhecido';
+
+switch(perfil){
+    case 'professor':
+        print('Acesso completo');
+    case 'aluno':
+        print('Acesso às atividades');
+    default: 
+        print('Perfil desconhecido'); 
+    }
+    
+//===================================================
+//EX FOR-WHILE
+
+for (int i=1; i<=5; i++){
+    print('Repetição $i');
+}
+
+int tentativas = 0;
+while (tentativas < 3){
+    print('Tentativa ${tentativas+1}');
+    tentativas++;
+}
+
+}
